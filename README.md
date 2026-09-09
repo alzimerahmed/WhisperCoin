@@ -20,10 +20,7 @@
 WhisperCoin is a comprehensive financial tracking manager that turns bank SMS and PDF statements into a clean, searchable money timeline with on-device AI assistance. 100% private, no cloud processing.
 
 
-[//]: # ()
-⭐ **Star us on GitHub**
-
-[//]: # ()
+Star this project on GitHub
 [![Share](https://img.shields.io/badge/share-000000?logo=x&logoColor=white)](https://x.com/intent/tweet?text=Check%20out%20WhisperCoin%20AI%20-%20Privacy-first%20expense-budget%20tracker%20with%20on-device%20AI:%20https://github.com/alzimerahmed/WhisperCoin%20%23Android%20%23PrivacyFirst%20%23OnDeviceAI)
 [![Share](https://img.shields.io/badge/share-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/sharing/share-offsite/?url=https://github.com/alzimerahmed/WhisperCoin)
 [![Share](https://img.shields.io/badge/share-FF4500?logo=reddit&logoColor=white)](https://www.reddit.com/submit?title=WhisperCoin%20AI%20-%20Privacy-first%20expense-budget%20tracker&url=https://github.com/alzimerahmed/WhisperCoin)
@@ -192,8 +189,7 @@ adb install app/build/outputs/apk/debug/app-debug.apk
 ## Tech Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=kotlin,androidstudio,materialui" /><br>
-  <img src="https://skillicons.dev/icons?i=hilt,room,coroutines" />
+  <img src="https://skillicons.dev/icons?i=kotlin,androidstudio,materialui" alt="Kotlin, Android Studio, Material UI" />
 </p>
 
 **Architecture**: MVVM • Jetpack Compose • Room • Coroutines • Hilt • MediaPipe AI • Material Design 3
