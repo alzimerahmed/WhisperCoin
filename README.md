@@ -1,138 +1,42 @@
-<a name="top"></a>
-[![WhisperCoin Banner](banner.png)](https://github.com/alzimerahmed/WhisperCoin)
+# WhisperCoin — Private, on-device expense tracker
 
+<div align="center">
+
+<img src="banner.png" alt="WhisperCoin banner" width="640"/>
 
 [![License](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](LICENSE)
 [![Android](https://img.shields.io/badge/Android-8.0+-3DDC84)](https://developer.android.com/about/versions/oreo)
 [![Kotlin](https://img.shields.io/badge/Kotlin-2.0.21-7F52FF)](https://kotlinlang.org/)
-[![Privacy](https://img.shields.io/badge/AI-100%25_On--Device-FF6B6B)](https://developers.google.com/mediapipe)
 
+*An Android expense tracker that parses bank SMS and PDF statements on your phone. No cloud, no uploads, no tracking.*
 
+[Quick Start](#quick-start) • [Features](#features) • [Screenshots](#screenshots) • [Tech Stack](#tech-stack) • [Contributing](#contributing)
 
+</div>
 
-[![GitHub release](https://img.shields.io/github/v/release/alzimerahmed/WhisperCoin)](https://github.com/alzimerahmed/WhisperCoin/releases)
-[![GitHub last commit](https://img.shields.io/github/last-commit/alzimerahmed/WhisperCoin)](https://github.com/alzimerahmed/WhisperCoin/commits)
+---
 
+## Features
 
-
-## WhisperCoin — Free & Open‑Source, private SMS‑powered expense tracker
-
-WhisperCoin is a comprehensive financial tracking manager that turns bank SMS and PDF statements into a clean, searchable money timeline with on-device AI assistance. 100% private, no cloud processing.
-
-
-Star this project on GitHub
-[![Share](https://img.shields.io/badge/share-000000?logo=x&logoColor=white)](https://x.com/intent/tweet?text=Check%20out%20WhisperCoin%20AI%20-%20Privacy-first%20expense-budget%20tracker%20with%20on-device%20AI:%20https://github.com/alzimerahmed/WhisperCoin%20%23Android%20%23PrivacyFirst%20%23OnDeviceAI)
-[![Share](https://img.shields.io/badge/share-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/sharing/share-offsite/?url=https://github.com/alzimerahmed/WhisperCoin)
-[![Share](https://img.shields.io/badge/share-FF4500?logo=reddit&logoColor=white)](https://www.reddit.com/submit?title=WhisperCoin%20AI%20-%20Privacy-first%20expense-budget%20tracker&url=https://github.com/alzimerahmed/WhisperCoin)
-[![Share](https://img.shields.io/badge/share-0088CC?logo=telegram&logoColor=white)](https://t.me/share/url?url=https://github.com/alzimerahmed/WhisperCoin&text=Check%20out%20WhisperCoin%20AI)
-
-## Overview
-
-For Android users worldwide who want a comprehensive financial tracking — automatic expense tracking from bank SMS, manual cash entry, budgeting, clean categories, subscription detection, and clear insights. Supporting 80+ banks across 14 countries with multi-currency capabilities.
-
-
-
-
-
-### How it works
-
-1. Grant SMS permission (read‑only). No inbox changes, no messages sent OR import PDF Statements.
-2. WhisperCoin parses transaction SMS or PDF, extracts amount, merchant, category, and date.
-3. View analytics, subscriptions, and the full transaction timeline — with on-device AI assistant for insights.
-
-## Why WhisperCoin
-
-- **🤖 Smart SMS Parsing** - Automatically extracts transaction details from 40+ banks SMS across 5 countries
-- **🗂️ Smart PDF Parsing** - Automatically extracts transaction details from GPay and PhonePe PDF UPI Statements.
-- **💰 Smart Budgeting** - Set and track monthly budgets with visual progress indicators
-- **👛 Cash Wallet** - Dedicated default wallet for tracking cash expenses
-- **🏦 Advance Account Management** - Create Custom account for manual tracking
-- **📂 Advanced Categories** - Create and manage custom categories and subcategories
-- **📈 Advanced Visualizations** - Interactive animated Line, Bar, and Heatmap graphs
-- **👤 User Profiles** - Support for personal user profiles
-- **🔔 Smart Notifications** - Alerts and reminders for important financial events
-- **🌍 Multi-Currency Support** - Native support for ₹, $, د.إ, ₨, ብር with proper localization
-- **📊 Clear Insights** - Analytics and charts to instantly see where money goes
-- **🔄 Subscription Tracking** - Detects and monitors recurring payments
-- **💬 On-device AI Assistant** - Ask questions like "What did I spend on food last month?" locally
-- **📤 Data Export** - Export as CSV for taxes or records
-
-## Supported Banks & Countries
-
-Supporting **80+ banks** across **14 countries** with **multi-currency** capabilities:
-
-### 🇮🇳 India (40+ banks) - INR ₹
-- **HDFC Bank**, **State Bank of India (SBI)**, **ICICI Bank**
-- **Axis Bank**, **Punjab National Bank (PNB)**, **IDBI Bank**
-- **Indian Bank**, **Federal Bank**, **Karnataka Bank**, **Kerala Gramin Bank**
-- **Canara Bank**, **Bank of Baroda**, **Bank of India**, **Union Bank**
-- **Jupiter (CSB Bank)**, **Amazon Pay (Juspay)**, **Kotak Bank**
-- **IDFC First Bank**, **HSBC Bank**, **Central Bank of India**
-- **South Indian Bank**, **JK Bank**, **Indian Overseas Bank**
-- **Airtel Payments Bank**, **AMEX**, **IPPB**, **DOP (Post Office)**
-- **OneCard**, **UCO Bank**, **AU Bank**, **Yes Bank**, **Bandhan Bank**
-- **IndusInd Bank**, **City Union Bank**, **Dhanlaxmi Bank**, **Standard Chartered**
-- **Equitas Small Finance Bank**, **Saraswat Bank**, **DBS Bank**, **Utkarsh Bank**
-- *Services*: **Slice**, **LazyPay**, **Jio Pay**, **Juspay**
-
-### 🇺🇸 USA (7 banks) - USD $
-- **Citi Bank**, **Discover Card**, **Old Hickory Credit Union**, **Charles Schwab**
-- **Navy Federal Credit Union**, **AdelFi Credit Union**, **Huntington Bank**
-
-### 🇦🇪 UAE (5 banks) - AED د.إ
-- **First Abu Dhabi Bank (FAB)**, **Abu Dhabi Commercial Bank (ADCB)**
-- **Emirates NBD**, **Liv Bank**, **Mashreq Bank**
-
-### 🇳🇵 Nepal (7 banks) - NPR ₨
-- **Laxmi Sunrise Bank**, **Everest Bank**, **NMB Bank**, **Nabil Bank**
-- **Manjushree Finance**, **Siddhartha Bank**, **Prime Commercial Bank**
-
-### 🇹🇭 Thailand (11 banks/cards) - THB ฿
-- **Bangkok Bank**, **Kasikorn Bank**, **Siam Commercial Bank**, **Krungthai Bank**
-- **Krungsri (Bank of Ayudhya)**, **TMBThanachart (TTB)**, **Government Savings Bank (GSB)**
-- **BAAC**, **UOB Thailand**, **CIMB Thai**, **KTC Credit Card**
-
-### 🇪🇹 Ethiopia (4 banks/services) - ETB ብር
-- **Commercial Bank of Ethiopia (CBE)**, **Telebirr**, **Zemen Bank**, **Dashen Bank**
-
-### 🇹🇿 Tanzania (3 services) - TZS TSh
-- **M-Pesa Tanzania**, **Selcom Pesa**, **Tigo Pesa (Mixx by Yas)**
-
-### 🇵🇰 Pakistan (2 banks) - PKR ₨
-- **Faysal Bank**, **Standard Chartered Bank**
-
-### 🇮🇷 Iran (2 banks) - IRR ﷼
-- **Melli Bank**, **Parsian Bank**
-
-### 🇸🇦 Saudi Arabia (1 bank) - SAR ﷼
-- **Alinma Bank (بنك الإنماء)** - Arabic SMS support
-
-### 🇪🇬 Egypt (1 bank) - EGP E£
-- **CIB (Commercial International Bank)**
-
-### 🇰🇪 Kenya (1 service) - KES Ksh
-- **M-PESA** - Mobile money service
-
-### 🇨🇴 Colombia (1 bank) - COP $
-- **Bancolombia**
-
-### 🇧🇾 Belarus (1 bank) - BYN Br
-- **Priorbank** - Russian/Belarusian SMS support
-
-More banks being added regularly! [Request your bank →](https://github.com/alzimerahmed/WhisperCoin/issues/new?template=bank_support_request.md)
-
-## Privacy First
-
-All processing happens on your device using MediaPipe's LLM. Your financial data never leaves your phone. No servers, no uploads, no tracking.
+- **On-device SMS parsing** — Reads transaction SMS from 80+ banks across 14 countries locally.
+- **PDF statement import** — Extracts UPI and card transactions from GPay, PhonePe, and bank PDFs.
+- **Budgeting** — Monthly budgets with visual progress and category breakdowns.
+- **Subscription tracking** — Detects and monitors recurring payments.
+- **Cash wallet** — Default wallet for manual cash expenses.
+- **Custom categories** — Create and manage categories and subcategories.
+- **Multi-currency** — Supports INR, USD, AED, NPR, THB, ETB, TZS, PKR, IRR, SAR, EGP, KES, COP, BYN with localized formatting.
+- **On-device AI assistant** — Ask questions about spending using a local MediaPipe / Qwen 2.5 model.
+- **Data export** — Export transactions to CSV for taxes or records.
+- **Biometric lock** — App-level authentication support.
 
 ## Screenshots
 
 <table>
 <tr>
-<td><img src="screenshots/home.png" width="160"/></td>
-<td><img src="screenshots/analytics.png" width="160"/></td>
-<td><img src="screenshots/chat.png" width="160"/></td>
-<td><img src="screenshots/settings.png" width="160"/></td>
+<td><img src="screenshots/home.png" alt="Home screen" width="160"/></td>
+<td><img src="screenshots/analytics.png" alt="Analytics screen" width="160"/></td>
+<td><img src="screenshots/chat.png" alt="AI chat screen" width="160"/></td>
+<td><img src="screenshots/settings.png" alt="Settings screen" width="160"/></td>
 </tr>
 <tr>
 <td align="center">Home</td>
@@ -141,10 +45,10 @@ All processing happens on your device using MediaPipe's LLM. Your financial data
 <td align="center">Settings</td>
 </tr>
 <tr>
-<td><img src="screenshots/subscriptions.png" width="160"/></td>
-<td><img src="screenshots/transactions.png" width="160"/></td>
-<td><img src="screenshots/account_detail.png" width="160"/></td>
-<td><img src="screenshots/categories.png" width="160"></td>
+<td><img src="screenshots/subscriptions.png" alt="Subscriptions screen" width="160"/></td>
+<td><img src="screenshots/transactions.png" alt="Transactions screen" width="160"/></td>
+<td><img src="screenshots/account_detail.png" alt="Account detail screen" width="160"/></td>
+<td><img src="screenshots/categories.png" alt="Categories screen" width="160"/></td>
 </tr>
 <tr>
 <td align="center">Subscriptions</td>
@@ -153,10 +57,10 @@ All processing happens on your device using MediaPipe's LLM. Your financial data
 <td align="center">Categories</td>
 </tr>
 <tr>
-<td><img src="screenshots/budgets.png" width="160"/></td>
-<td><img src="screenshots/budget_details.png" width="160"/></td>
-<td><img src="screenshots/budget_history.png" width="160"/></td>
-<td><img src="screenshots/profile.png" width="160"></td>
+<td><img src="screenshots/budgets.png" alt="Budgets screen" width="160"/></td>
+<td><img src="screenshots/budget_details.png" alt="Budget details screen" width="160"/></td>
+<td><img src="screenshots/budget_history.png" alt="Budget history screen" width="160"/></td>
+<td><img src="screenshots/profile.png" alt="Profile screen" width="160"/></td>
 </tr>
 <tr>
 <td align="center">Budgets</td>
@@ -166,17 +70,50 @@ All processing happens on your device using MediaPipe's LLM. Your financial data
 </tr>
 </table>
 
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| UI | Jetpack Compose + Material 3 |
+| Architecture | MVVM + Clean Architecture, unidirectional data flow with StateFlow |
+| Dependency Injection | Hilt |
+| Database | Room |
+| Background work | WorkManager |
+| AI / LLM | MediaPipe with Qwen 2.5 (on-device) |
+| Parser | Standalone `parser-core` Kotlin/JVM module |
+| Build | Gradle Kotlin DSL, version catalogs |
+
+## Project Structure
+
+```
+.
+├── app/                    # Main Android application
+│   ├── src/main/           # UI, ViewModels, Room, Hilt, SMS/PDF parsing
+│   └── src/test/           # Unit and integration tests
+├── parser-core/            # Standalone bank SMS/PDF parser (no Android deps)
+│   └── src/main/kotlin/com/alzimer/whispercoin/parser/core/
+├── docs/                   # Project documentation (gitignored, local only)
+├── .github/                # Issue templates, PR template, CI workflows
+├── fastlane/               # Store metadata
+├── gradle/                 # Gradle wrapper
+├── scripts/                # Release and utility scripts
+└── screenshots/            # Store and README screenshots
+```
+
 ## Quick Start
 
 ```bash
-# Clone repository
+# Clone the repository
 git clone https://github.com/alzimerahmed/WhisperCoin.git
 cd WhisperCoin
 
-# Build APK
+# Run the parser-core tests (pure JVM, no Android SDK needed)
+./gradlew :parser-core:test
+
+# Build the debug APK (requires Android SDK)
 ./gradlew assembleDebug
 
-# Install
+# Install on a connected device
 adb install app/build/outputs/apk/debug/app-debug.apk
 ```
 
@@ -184,79 +121,52 @@ adb install app/build/outputs/apk/debug/app-debug.apk
 
 - Android 8.0+ (API 26)
 - Android Studio Ladybug or newer
-- JDK 11
+- JDK 17
 
-## Tech Stack
+## Usage
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=kotlin,androidstudio,materialui" alt="Kotlin, Android Studio, Material UI" />
-</p>
+1. Grant read-only SMS permission when prompted.
+2. WhisperCoin scans transaction messages and PDF statements in the background.
+3. Open the app to view the transaction timeline, budgets, subscriptions, and ask the on-device AI about your spending.
 
-**Architecture**: MVVM • Jetpack Compose • Room • Coroutines • Hilt • MediaPipe AI • Material Design 3
+## Supported Banks
 
-## Project Structure
+WhisperCoin supports **80+ banks** across **14 countries**, including:
 
-The app follows a modern Android architecture guideline, separating concerns into Data, Domain, and Presentation layers.
+- **India**: HDFC, SBI, ICICI, Axis, PNB, IDBI, Federal, Kotak, Yes, IndusInd, Canara, Union, Bandhan, DBS, Utkarsh, and more.
+- **USA**: Citi, Discover, Charles Schwab, Navy Federal, Huntington.
+- **UAE**: FAB, ADCB, Emirates NBD, Liv, Mashreq.
+- **Nepal**: Laxmi Sunrise, Everest, NMB, Nabil, Manjushree, Siddhartha.
+- **Thailand**: Bangkok Bank, Kasikorn, SCB, Krungthai, Krungsri, TTB, GSB, BAAC, UOB, CIMB, KTC.
+- **Ethiopia**: CBE, Telebirr, Zemen, Dashen.
+- **Tanzania**: M-Pesa, Selcom Pesa, Tigo Pesa.
+- **Pakistan**: Faysal Bank, Standard Chartered.
+- **Iran**: Melli, Parsian.
+- **Saudi Arabia**: Alinma (Arabic SMS).
+- **Egypt**: CIB.
+- **Kenya**: M-PESA.
+- **Colombia**: Bancolombia.
+- **Belarus**: Priorbank (Russian/Belarusian SMS).
 
-```
-com.alzimer.whispercoin
-├── data                # Data layer (Repositories, Room Database, Data Sources)
-│   ├── database        # Room entities and DAOs
-│   ├── repository      # Repository implementations
-│   ├── manager         # SMS and Notification managers
-│   └── preferences     # DataStore preferences
-├── domain              # Domain layer (Use Cases, Models)
-├── presentation        # UI layer (Jetpack Compose)
-│   ├── ui              # Composable screens and components
-│   │   ├── features    # Feature-specific screens and viewmodels (Transactions, Budget, etc.)
-│   │   └── components  # Reusable UI components
-│   └── navigation      # Navigation graph and destinations
-├── di                  # Dependency Injection (Hilt Modules)
-└── utils               # Utility classes and extensions
-```
-
-## Community & Support
-
-
-- **Issues**: Report bugs or request features — [Open an issue](https://github.com/alzimerahmed/WhisperCoin/issues)
+[Request a missing bank](https://github.com/alzimerahmed/WhisperCoin/issues/new?template=bank_support_request.md)
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+Fork the repository, create a feature branch, and open a pull request. See [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for details.
 
-Please read our [Code of Conduct](CODE_OF_CONDUCT.md) before participating.
+## Roadmap
 
-```bash
-./gradlew test          # Run tests
-./gradlew lint   # Check style
-```
+- Phase 2: README and content cleanup (in progress).
+- Phase 3: CI, build, and developer experience improvements.
+- Phase 4: Biometric lock, real-time SMS observer, search and filter, CSV/OFX/QIF export.
+- Phase 5: Security, performance, accessibility, and anti-vibe-coding audit.
 
-## Security
+## Changelog
 
-Please review our [Security Policy](SECURITY.md) for how to report vulnerabilities.
-
-
-
-## Acknowledgements
-
-Special thanks to the following projects and resources:
-
-- The project was originally based on open-source expense tracker work before being adopted by the current owner.
-- **[Microsoft Fluent Emojis](https://github.com/microsoft/fluentui-emoji)** - Beautiful emojis used for category icons.
-- **[Haze](https://chrisbanes.github.io/haze/latest/)** - Applied for stunning blur effects.
-- **[Compose Charts](https://github.com/ehsannarmani/ComposeCharts)** - Used for creating animated charts and graphs.
-- **[Reorderable](https://github.com/Calvin-LL/Reorderable)** - Used for re-ordering widgets.
-- **[Peeps Ui8](https://peeps.ui8.net/)** - Used for Built-in User Avatars.
-- **[Iconax](https://iconsax.io/)** - Used for icons
+See [GitHub Releases](https://github.com/alzimerahmed/WhisperCoin/releases) for the changelog.
 
 ## License
 
-GNU Affero General Public License v3.0 - see [LICENSE](LICENSE)
+GNU Affero General Public License v3.0 — see [LICENSE](LICENSE).
 
----
-
-<p align="center">
-<a href="https://github.com/alzimerahmed/WhisperCoin/releases">Download</a> •
-<a href="https://github.com/alzimerahmed/WhisperCoin/issues">Report Bug</a> •
-<a href="https://github.com/alzimerahmed/WhisperCoin/issues">Request Feature</a>
-</p>
+Maintained by [Alzimer Ahmed](mailto:alzimerahmed84@gmail.com).
