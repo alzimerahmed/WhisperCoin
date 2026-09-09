@@ -1,6 +1,5 @@
 package com.alzimer.whispercoin.data.database
 
-import androidx.room.AutoMigration
 import androidx.room.Database
 import androidx.room.DeleteColumn
 import androidx.room.Room
@@ -86,31 +85,7 @@ import com.alzimer.whispercoin.data.database.entity.WebhookProfileEntity
             com.alzimer.whispercoin.data.database.entity.LendBorrowTransactionEntity::class
         ],
         version = 62,
-    exportSchema = true,
-    autoMigrations =
-        [
-            AutoMigration(from = 27, to = 28),
-            AutoMigration(from = 28, to = 29),
-            AutoMigration(from = 29, to = 30, spec = Migration29To30::class),
-            AutoMigration(from = 30, to = 31),
-            AutoMigration(from = 31, to = 32, spec = Migration31To32::class),
-            AutoMigration(from = 32, to = 33),
-            AutoMigration(from = 33, to = 34),
-            AutoMigration(from = 34, to = 35, spec = Migration34To35::class),
-            AutoMigration(from = 35, to = 36),
-            AutoMigration(from = 36, to = 37),
-            AutoMigration(from = 37, to = 38),
-            AutoMigration(from = 38, to = 39),
-            AutoMigration(from = 39, to = 40),
-            AutoMigration(from = 40, to = 41, spec = Migration40To41::class),
-            AutoMigration(from = 41, to = 42),
-            AutoMigration(from = 42, to = 43),
-            AutoMigration(from = 43, to = 44, spec = Migration43To44::class),
-            AutoMigration(from = 44, to = 45, spec = Migration44To45::class),
-            AutoMigration(from = 45, to = 46, spec = Migration45To46::class),
-            AutoMigration(from = 46, to = 47, spec = Migration46To47::class),
-            AutoMigration(from = 47, to = 48)
-        ]
+    exportSchema = true
 )
 @TypeConverters(Converters::class)
 abstract class WhisperCoinDatabase : RoomDatabase() {
@@ -174,6 +149,7 @@ MIGRATION_55_56,
                                 MIGRATION_59_60,
                                 MIGRATION_60_61
                             )
+                            .fallbackToDestructiveMigration()
                             .build()
                     INSTANCE = instance
                     instance

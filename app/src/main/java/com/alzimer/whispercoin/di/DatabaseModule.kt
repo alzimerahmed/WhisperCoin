@@ -88,6 +88,9 @@ object DatabaseModule {
                 // Enable auto-migrations
                 // Room will automatically detect schema changes between versions
 
+                // Fallback to destructive migration for versions without a manual migration path
+                .fallbackToDestructiveMigration()
+
                 // Add callback to seed default data on first creation
                 .addCallback(DatabaseCallback(context))
                 .build()
