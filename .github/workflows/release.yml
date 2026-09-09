@@ -104,11 +104,6 @@ jobs:
           echo "code=$CODE" >> $GITHUB_OUTPUT
           echo "Release version: $VERSION (code: $CODE)"
       
-      - name: Check if tag already exists
-        # Only relevant for manual dispatch where the workflow creates the tag itself.
-        # For tag-push events the tag necessarily exists (it triggered this run).
-        if: ${{ !inputs.dry_run && github.event_name != 'push' }}
-      
       - name: Generate changelog
         id: changelog
         run: |
