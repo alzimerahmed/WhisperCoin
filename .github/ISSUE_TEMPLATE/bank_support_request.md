@@ -7,11 +7,11 @@ assignees: 'alzimerahmed'
 
 ---
 
-## 🏦 Bank Information
+## Bank  Bank Information
 **Bank Name**: <!-- e.g. ICICI Bank, Axis Bank -->
 **Country**: <!-- e.g. India -->
 
-## 📱 SMS Examples
+## SMS Examples
 <!-- IMPORTANT: Please remove/mask sensitive information like account numbers, amounts can be changed -->
 
 ### Example 1
@@ -32,7 +32,7 @@ Paste another SMS example here
 Different type of transaction if available
 ```
 
-## 📋 Transaction Types Needed
+## Issue  Transaction Types Needed
 <!-- Check all that apply -->
 - [ ] Debit/Credit transactions
 - [ ] UPI transactions
@@ -42,5 +42,5 @@ Different type of transaction if available
 - [ ] Subscription/Mandate notifications
 - [ ] International transactions
 
-## 💬 Additional Information
+## Additional Information
 <!-- Any specific parsing issues or requirements -->

@@ -4,7 +4,7 @@ Thank you for your interest in contributing to WhisperCoin! We welcome contribut
 
 ## How to Contribute
 
-### 🐛 Reporting Bugs
+### Bug  Reporting Bugs
 
 1. Check if the bug has already been reported in [Issues](https://github.com/alzimerahmed/WhisperCoin/issues)
 2. If not, create a new issue using the bug report template
@@ -15,13 +15,13 @@ Thank you for your interest in contributing to WhisperCoin! We welcome contribut
    - Screenshots if applicable
    - Bank name (if SMS parsing related)
 
-### 💡 Suggesting Features
+### Feature  Suggesting Features
 
 1. Check [existing issues](https://github.com/alzimerahmed/WhisperCoin/issues) for similar suggestions
 2. Create a new issue using the feature request template
 3. Describe the problem it solves and how it would work
 
-### 🏦 Adding Bank Support
+### Bank  Adding Bank Support
 
 To add support for a new bank:
 
@@ -36,7 +36,7 @@ To add support for a new bank:
 4. Add your parser to `BankParserFactory.parsers` list in `parser-core`
 5. Test with real SMS samples
 
-### 💻 Code Contributions
+### Code  Code Contributions
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -54,7 +54,7 @@ To add support for a new bank:
 7. Push to your fork
 8. Open a Pull Request
 
-### 📋 Pull Request Guidelines
+### Issue  Pull Request Guidelines
 
 - Keep PRs focused on a single feature or fix
 - Include tests for new functionality
@@ -136,4 +136,4 @@ Feel free to:
 
 - Reach out to maintainers
 
-Thank you for helping make WhisperCoin better! 🚀
+Thank you for helping make WhisperCoin better! Release 

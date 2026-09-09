@@ -10,11 +10,11 @@ WhisperCoin is built with privacy as the core principle. We believe your financi
 
 **All data processing happens locally on your device.** We use MediaPipe's on-device LLM (Qwen 2.5) for AI features, ensuring:
 
-- ✅ **No cloud servers** - Your data never leaves your phone
-- ✅ **No data collection** - We don't collect, store, or transmit any user data
-- ✅ **No tracking** - No analytics, no telemetry, no user tracking
-- ✅ **No ads** - No advertising networks or tracking pixels
-- ✅ **Offline AI** - Once downloaded, AI works completely offline
+- [x] **No cloud servers** - Your data never leaves your phone
+- [x] **No data collection** - We don't collect, store, or transmit any user data
+- [x] **No tracking** - No analytics, no telemetry, no user tracking
+- [x] **No ads** - No advertising networks or tracking pixels
+- [x] **Offline AI** - Once downloaded, AI works completely offline
 
 ## Data Storage
 
@@ -56,12 +56,12 @@ WhisperCoin is built with privacy as the core principle. We believe your financi
 ## Third-Party Services
 
 WhisperCoin does **NOT** use:
-- ❌ Cloud services or APIs (except CDN for model download)
-- ❌ Analytics services (Google Analytics, Firebase, etc.)
-- ❌ Crash reporting services
-- ❌ Advertising networks
-- ❌ Social media SDKs
-- ❌ Payment processors
+- [ ] Cloud services or APIs (except CDN for model download)
+- [ ] Analytics services (Google Analytics, Firebase, etc.)
+- [ ] Crash reporting services
+- [ ] Advertising networks
+- [ ] Social media SDKs
+- [ ] Payment processors
 
 **Note**: The Google Play Store variant includes Play Services for app updates only. The F-Droid variant has no Google services.
 

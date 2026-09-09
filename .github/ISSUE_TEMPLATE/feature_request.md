@@ -7,20 +7,20 @@ assignees: 'alzimerahmed'
 
 ---
 
-## 💡 Feature Description
+## Feature  Feature Description
 <!-- A clear and concise description of what you want to happen -->
 
-## 🎯 Problem it Solves
+## Problem it Solves
 <!-- What problem does this feature solve? -->
 
-## 🔧 Proposed Solution
+## Proposed Solution
 <!-- Describe how you'd like this feature to work -->
 
-## 🎨 UI/UX Suggestions (Optional)
+## UI/UX Suggestions (Optional)
 <!-- Any mockups or UI ideas? -->
 
-## 📱 Alternatives Considered
+## Alternatives Considered
 <!-- Have you considered any alternative solutions? -->
 
-## 💬 Additional Context
+## Additional Context
 <!-- Add any other context or screenshots about the feature request here -->

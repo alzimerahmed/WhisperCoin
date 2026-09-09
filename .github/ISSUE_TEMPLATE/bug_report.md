@@ -7,24 +7,24 @@ assignees: 'alzimerahmed'
 
 ---
 
-## 🐛 Bug Description
+## Bug  Bug Description
 <!-- A clear and concise description of what the bug is -->
 
-## 📱 Steps to Reproduce
+## Steps to Reproduce
 1. Go to '...'
 2. Click on '...'
 3. See error
 
-## ✅ Expected Behavior
+## [x] Expected Behavior
 <!-- What you expected to happen -->
 
-## 📸 Screenshots
+## Screenshots
 <!-- If applicable, add screenshots to help explain your problem -->
 
-## 📋 Device Information
+## Issue  Device Information
 - **Device**: <!-- e.g. Pixel 6, Samsung S23 -->
 - **Android Version**: <!-- e.g. Android 13 -->
 - **App Version**: <!-- e.g. 2.1.2 -->
 
-## 💬 Additional Context
+## Additional Context
 <!-- Add any other context about the problem here -->
