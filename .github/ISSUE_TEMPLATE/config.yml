@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+#  - name: Community Discussions
+#    url: https://github.com/alzimerahmed/WhisperCoin/discussions
+#    about: Get help and chat with other WhisperCoin users
+  - name: 📖 Documentation
+    url: https://github.com/alzimerahmed/WhisperCoin
+    about: Check out the README for setup and usage instructions
