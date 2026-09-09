@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Dinheiro</string>
+    <string name="app_name">WhisperCoin</string>
     <string name="add_transaction">Adicionar transação</string>
     <string name="add_subscription">Adicionar inscrição</string>
     <string name="add_transfer">Adicionar transferência</string>
@@ -87,7 +87,7 @@
     <string name="account_name_required_label">Nome da Conta *</string>
     <string name="placeholder_bank_name">ex.: Banco HDFC</string>
     <string name="placeholder_credit_name">ex.: Cartão de Crédito HDFC</string>
-    <string name="placeholder_wallet_name">ex.: Dinheiro</string>
+    <string name="placeholder_wallet_name">ex.: WhisperCoin</string>
     <string name="last_4_digits_required_label">Últimos 4 Dígitos *</string>
     <string name="placeholder_last_4_digits">ex.: 1234</string>
     <string name="enter_last_4_digits_hint">Insira os últimos 4 dígitos da conta/cartão</string>
@@ -307,7 +307,7 @@
     <string name="press_back_again_to_close">Pressione o botão \"voltar\" novamente para fechar o aplicativo</string>
     <string name="transaction_deleted">Transação excluída</string>
     <string name="undo">Desfazer</string>
-    <string name="whispercoin_title">Dinheiro</string>
+    <string name="whispercoin_title">WhisperCoin</string>
     <string name="profile">Perfil</string>
     <string name="banner">Estandarte</string>
     <string name="recent">Recente</string>

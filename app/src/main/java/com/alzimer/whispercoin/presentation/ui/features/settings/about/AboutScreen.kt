@@ -186,10 +186,10 @@ fun AboutScreen(
 
                 AboutDeveloperItem(
                     title = stringResource(R.string.developed_by),
-                    subtitle = "modestcat0309@gmail.com",
+                    subtitle = "support@whispercoin.app",
                     onClick = {
                         val intent = Intent(Intent.ACTION_SENDTO).apply {
-                            data = "mailto:modestcat0309@gmail.com".toUri()
+                            data = "mailto:support@whispercoin.app".toUri()
                             putExtra(Intent.EXTRA_SUBJECT, "Feedback for WhisperCoin")
                         }
                         context.startActivity(Intent.createChooser(intent, "Send Email"))

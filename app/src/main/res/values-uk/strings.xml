@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Касіро</string>
+    <string name="app_name">WhisperCoin</string>
     <string name="add_transaction">Додати транзакцію</string>
     <string name="add_subscription">Додати передплату</string>
     <string name="add_transfer">Додати переказ</string>
@@ -308,7 +308,7 @@
     <string name="press_back_again_to_close">Натисніть ще раз, щоб закрити додаток</string>
     <string name="transaction_deleted">Транзакцію видалено</string>
     <string name="undo">Скасувати</string>
-    <string name="whispercoin_title">Касіро</string>
+    <string name="whispercoin_title">WhisperCoin</string>
     <string name="profile">Анкета</string>
     <string name="banner">Стяг</string>
     <string name="recent">Недавні</string>
@@ -480,7 +480,7 @@
     <string name="no_transactions_for_format">Немає транзакцій для %1$s</string>
     <string name="sync_sms_to_see_transactions">Синхронізуйте ваші SMS, щоб бачити операції</string>
     <string name="about">Про програму</string>
-    <string name="whispercoin_logo_cd">Логотип Касіро</string>
+    <string name="whispercoin_logo_cd">Логотип WhisperCoin</string>
     <string name="version_format">Версія %1$s, db-v%2$d</string>
     <string name="developed_by">Розроблено Alzimer Ahmed</string>
     <string name="lead_developer_cd">провідний розробник</string>
@@ -491,7 +491,7 @@
     <string name="faq">ЧАП</string>
     <string name="faq_desc">Часті запитання</string>
     <string name="guides">Посібники</string>
-    <string name="guides_desc">Як користуватися Касіро</string>
+    <string name="guides_desc">Як користуватися WhisperCoin</string>
     <string name="report_bug">Повідомити про помилку</string>
     <string name="report_bug_desc">Допоможіть нам покращити WhisperCoin</string>
     <string name="privacy_policy">Політика конфіденційності</string>

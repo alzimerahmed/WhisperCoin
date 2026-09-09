@@ -82,7 +82,7 @@ Bank parsers are now in the `parser-core` module for reusability across platform
    - `java.math.BigDecimal` for amounts
 
 ### Integration in main app:
-- Use `com.alzimer.tracker.data.mapper.toEntity()` to convert ParsedTransaction to TransactionEntity
+- Use `com.alzimer.whispercoin.data.mapper.toEntity()` to convert ParsedTransaction to TransactionEntity
 - The mapper handles type conversions between modules
 
 ## Supported Banks (44 parsers)
