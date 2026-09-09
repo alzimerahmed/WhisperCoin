@@ -7,10 +7,11 @@
 [![License](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](LICENSE)
 [![Android](https://img.shields.io/badge/Android-8.0+-3DDC84)](https://developer.android.com/about/versions/oreo)
 [![Kotlin](https://img.shields.io/badge/Kotlin-2.0.21-7F52FF)](https://kotlinlang.org/)
+[![Build](https://github.com/alzimerahmed/WhisperCoin/actions/workflows/android-build.yml/badge.svg)](https://github.com/alzimerahmed/WhisperCoin/actions/workflows/android-build.yml)
 
 *An Android expense tracker that parses bank SMS and PDF statements on your phone. No cloud, no uploads, no tracking.*
 
-[Quick Start](#quick-start) • [Features](#features) • [Screenshots](#screenshots) • [Tech Stack](#tech-stack) • [Contributing](#contributing)
+[Quick Start](#quick-start) • [Features](#features) • [Tech Stack](#tech-stack) • [Project Structure](#project-structure) • [Contributing](#contributing)
 
 </div>
 
@@ -29,47 +30,6 @@
 - **Data export** — Export transactions to CSV for taxes or records.
 - **Biometric lock** — App-level authentication support.
 
-## Screenshots
-
-<table>
-<tr>
-<td><img src="screenshots/home.png" alt="Home screen" width="160"/></td>
-<td><img src="screenshots/analytics.png" alt="Analytics screen" width="160"/></td>
-<td><img src="screenshots/chat.png" alt="AI chat screen" width="160"/></td>
-<td><img src="screenshots/settings.png" alt="Settings screen" width="160"/></td>
-</tr>
-<tr>
-<td align="center">Home</td>
-<td align="center">Analytics</td>
-<td align="center">AI Chat</td>
-<td align="center">Settings</td>
-</tr>
-<tr>
-<td><img src="screenshots/subscriptions.png" alt="Subscriptions screen" width="160"/></td>
-<td><img src="screenshots/transactions.png" alt="Transactions screen" width="160"/></td>
-<td><img src="screenshots/account_detail.png" alt="Account detail screen" width="160"/></td>
-<td><img src="screenshots/categories.png" alt="Categories screen" width="160"/></td>
-</tr>
-<tr>
-<td align="center">Subscriptions</td>
-<td align="center">Transactions</td>
-<td align="center">Account Details</td>
-<td align="center">Categories</td>
-</tr>
-<tr>
-<td><img src="screenshots/budgets.png" alt="Budgets screen" width="160"/></td>
-<td><img src="screenshots/budget_details.png" alt="Budget details screen" width="160"/></td>
-<td><img src="screenshots/budget_history.png" alt="Budget history screen" width="160"/></td>
-<td><img src="screenshots/profile.png" alt="Profile screen" width="160"/></td>
-</tr>
-<tr>
-<td align="center">Budgets</td>
-<td align="center">Budget Details</td>
-<td align="center">Budget History</td>
-<td align="center">Profile</td>
-</tr>
-</table>
-
 ## Tech Stack
 
 | Layer | Technology |
@@ -82,6 +42,7 @@
 | AI / LLM | MediaPipe with Qwen 2.5 (on-device) |
 | Parser | Standalone `parser-core` Kotlin/JVM module |
 | Build | Gradle Kotlin DSL, version catalogs |
+| CI | GitHub Actions (parser-core tests, Android build, lint, wrapper validation) |
 
 ## Project Structure
 
@@ -92,12 +53,10 @@
 │   └── src/test/           # Unit and integration tests
 ├── parser-core/            # Standalone bank SMS/PDF parser (no Android deps)
 │   └── src/main/kotlin/com/alzimer/whispercoin/parser/core/
-├── docs/                   # Project documentation (gitignored, local only)
 ├── .github/                # Issue templates, PR template, CI workflows
 ├── fastlane/               # Store metadata
 ├── gradle/                 # Gradle wrapper
-├── scripts/                # Release and utility scripts
-└── screenshots/            # Store and README screenshots
+└── scripts/                # Release and utility scripts
 ```
 
 ## Quick Start
@@ -156,10 +115,14 @@ Fork the repository, create a feature branch, and open a pull request. See [CONT
 
 ## Roadmap
 
-- Phase 2: README and content cleanup (in progress).
-- Phase 3: CI, build, and developer experience improvements.
-- Phase 4: Biometric lock, real-time SMS observer, search and filter, CSV/OFX/QIF export.
-- Phase 5: Security, performance, accessibility, and anti-vibe-coding audit.
+- [x] Package and namespace migration to `com.alzimer.whispercoin`.
+- [x] README and content cleanup.
+- [x] CI, build, and developer experience improvements.
+- [x] Feature foundation: biometric lock, SMS processing, search/filter, CSV export.
+- [x] Quality gate: security, performance, accessibility, and anti-vibe-coding audits.
+- [ ] Real-time SMS observer to complement WorkManager scans.
+- [ ] OFX/QIF export formats.
+- [ ] Encrypted local backups.
 
 ## Changelog
 
