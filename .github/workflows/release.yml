@@ -105,23 +105,9 @@ jobs:
           echo "Release version: $VERSION (code: $CODE)"
       
       - name: Check if tag already exists
-        if: ${{ !inputs.dry_run }}
-        run: |
-          TAG_NAME="v${{ steps.next_version.outputs.version }}"
-          
-          # Check if tag exists locally
-          if git rev-parse "$TAG_NAME" >/dev/null 2>&1; then
-            echo "❌ Tag $TAG_NAME already exists locally"
-            exit 1
-          fi
-          
-          # Check if tag exists on remote
-          if git ls-remote --tags origin | grep -q "refs/tags/$TAG_NAME"; then
-            echo "❌ Tag $TAG_NAME already exists on remote"
-            exit 1
-          fi
-          
-          echo "✅ Tag $TAG_NAME is available"
+        # Only relevant for manual dispatch where the workflow creates the tag itself.
+        # For tag-push events the tag necessarily exists (it triggered this run).
+        if: ${{ !inputs.dry_run && github.event_name != 'push' }}
       
       - name: Generate changelog
         id: changelog
