@@ -7,7 +7,7 @@ import android.os.Build
 import android.util.Log
 import android.view.View
 import android.view.ViewGroup
-import androidx.annotation.RequiresApi
+import dev.chrisbanes.haze.hazeEffect
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
@@ -259,7 +259,6 @@ import dev.chrisbanes.haze.HazeEffectScope
 import dev.chrisbanes.haze.HazeTint
 import dev.chrisbanes.haze.hazeEffect
 
-@RequiresApi(Build.VERSION_CODES.S)
 @OptIn(
     ExperimentalMaterial3Api::class,
     ExperimentalMaterial3ExpressiveApi::class,
@@ -3964,7 +3963,6 @@ private fun MatchPreviewSheetContent(
     }
 }
 
-@RequiresApi(Build.VERSION_CODES.S)
 private fun captureReceiptToBitmap(
     rootView: View,
     context: android.content.Context,
