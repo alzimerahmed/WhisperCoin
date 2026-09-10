@@ -62,11 +62,9 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import com.alzimer.whispercoin.R
 import com.alzimer.whispercoin.data.preferences.AccentColor
-import com.alzimer.whispercoin.data.preferences.AppIcon
 import com.alzimer.whispercoin.data.preferences.AppFont
 import com.alzimer.whispercoin.data.preferences.NavigationBarStyle
 import com.alzimer.whispercoin.data.preferences.ThemeStyle
-import com.alzimer.whispercoin.utils.IconSwitchingUtils
 import com.alzimer.whispercoin.presentation.effects.BlurredAnimatedVisibility
 import com.alzimer.whispercoin.presentation.effects.overScrollVertical
 import com.alzimer.whispercoin.presentation.ui.components.CustomTitleTopAppBar
@@ -451,87 +449,6 @@ fun AppearanceScreen(
                             )
                         }
                     }
-                }
-
-                // App Logo Section
-                SectionHeader(
-                    title = "App Logo",
-                    modifier = Modifier.padding(start = Spacing.xl, top = Spacing.md)
-                )
-
-                LazyRow(
-                    modifier = Modifier.fillMaxWidth(),
-                    contentPadding = PaddingValues(horizontal = Spacing.md),
-                    horizontalArrangement = Arrangement.spacedBy(Spacing.md)
-                ) {
-                    item {
-                        AppLogoOption(
-                            name = stringResource(R.string.logo_original),
-                            icon = AppIcon.ORIGINAL,
-                            backgroundColor = Color(0xFF1F1F1F),
-                            drawableResId = R.drawable.whispercoin_original,
-                            isSelected = themeUiState.currentAppIcon == AppIcon.ORIGINAL,
-                            onClick = {
-                                IconSwitchingUtils.switchAppIcon(context, AppIcon.ORIGINAL)
-                                themeViewModel.updateAppIcon(AppIcon.ORIGINAL)
-                            }
-                        )
-                    }
-                    item {
-                        AppLogoOption(
-                            name = stringResource(R.string.logo_anarchy),
-                            icon = AppIcon.ANARCHY,
-                            backgroundColor = Color(0xFFF5EEE5),
-                            drawableResId = R.drawable.whispercoin_anarchy,
-                            isSelected = themeUiState.currentAppIcon == AppIcon.ANARCHY,
-                            onClick = {
-                                IconSwitchingUtils.switchAppIcon(context, AppIcon.ANARCHY)
-                                themeViewModel.updateAppIcon(AppIcon.ANARCHY)
-                            }
-                        )
-                    }
-                    item {
-                        AppLogoOption(
-                            name = stringResource(R.string.logo_comic),
-                            icon = AppIcon.COMIC,
-                            backgroundColor = Color.Transparent,
-                            drawableResId = R.drawable.whispercoin_comic,
-                            backgroundDrawableResId = R.drawable.ic_logo_comic_bg,
-                            isSelected = themeUiState.currentAppIcon == AppIcon.COMIC,
-                            onClick = {
-                                IconSwitchingUtils.switchAppIcon(context, AppIcon.COMIC)
-                                themeViewModel.updateAppIcon(AppIcon.COMIC)
-                            }
-                        )
-                    }
-                    item {
-                        AppLogoOption(
-                            name = stringResource(R.string.logo_zenith),
-                            icon = AppIcon.ZENITH,
-                            backgroundColor = Color(0xFFE6E6E6),
-                            drawableResId = R.drawable.whispercoin_zenith,
-                            isSelected = themeUiState.currentAppIcon == AppIcon.ZENITH,
-                            onClick = {
-                                IconSwitchingUtils.switchAppIcon(context, AppIcon.ZENITH)
-                                themeViewModel.updateAppIcon(AppIcon.ZENITH)
-                            }
-                        )
-                    }
-                    item {
-                        AppLogoOption(
-                            name = stringResource(R.string.logo_monochrome),
-                            icon = AppIcon.MONOCHROME,
-                            backgroundColor = MaterialTheme.colorScheme.primaryContainer,
-                            drawableResId = R.drawable.whispercoin_monochrome,
-                            iconTint = MaterialTheme.colorScheme.onPrimaryContainer,
-                            isSelected = themeUiState.currentAppIcon == AppIcon.MONOCHROME,
-                            onClick = {
-                                IconSwitchingUtils.switchAppIcon(context, AppIcon.MONOCHROME)
-                                themeViewModel.updateAppIcon(AppIcon.MONOCHROME)
-                            }
-                        )
-                    }
-
                 }
 
                 // Navigation Style Section
@@ -1022,7 +939,6 @@ fun ColorSchemeBox(
 @Composable
 fun AppLogoOption(
     name: String,
-    icon: AppIcon,
     backgroundColor: Color,
     drawableResId: Int,
     isSelected: Boolean,

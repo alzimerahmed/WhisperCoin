@@ -89,7 +89,6 @@ constructor(@ApplicationContext private val context: Context) {
         val HIDE_PILL_INDICATOR = booleanPreferencesKey("hide_pill_indicator")
         val BLUR_EFFECTS = booleanPreferencesKey("blur_effects")
         val IS_SAMPLE_DATA_SEEDED = booleanPreferencesKey("is_sample_data_seeded")
-        val APP_ICON = stringPreferencesKey("app_icon")
         val WEBHOOK_SYNC_MODE = stringPreferencesKey("webhook_sync_mode")
         val WEBHOOK_INTERVAL_HOURS = intPreferencesKey("webhook_interval_hours")
         val WEBHOOK_SCHEDULE_HOUR = intPreferencesKey("webhook_schedule_hour")
@@ -166,13 +165,6 @@ constructor(@ApplicationContext private val context: Context) {
                 hidePillIndicator = preferences[PreferencesKeys.HIDE_PILL_INDICATOR] ?: false,
                 blurEffects = preferences[PreferencesKeys.BLUR_EFFECTS] ?: (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S),
                 isSampleDataSeeded = preferences[PreferencesKeys.IS_SAMPLE_DATA_SEEDED] ?: false,
-                appIcon = try {
-                    AppIcon.valueOf(
-                        preferences[PreferencesKeys.APP_ICON] ?: AppIcon.ORIGINAL.name
-                    )
-                } catch (e: Exception) {
-                    AppIcon.ORIGINAL
-                },
                 unifiedCurrencyEnabled = preferences[PreferencesKeys.UNIFIED_CURRENCY_ENABLED] ?: false,
                 unifiedCurrencyCode = preferences[PreferencesKeys.UNIFIED_CURRENCY_CODE],
                 defaultCurrencyEnabled = preferences[PreferencesKeys.DEFAULT_CURRENCY_ENABLED] ?: false,
@@ -822,12 +814,6 @@ constructor(@ApplicationContext private val context: Context) {
             preferences[PreferencesKeys.IS_SAMPLE_DATA_SEEDED] = seeded
         }
     }
-
-    suspend fun updateAppIcon(icon: AppIcon) {
-        context.dataStore.edit { preferences ->
-            preferences[PreferencesKeys.APP_ICON] = icon.name
-        }
-    }
 }
 
 data class UserPreferences(
@@ -855,7 +841,6 @@ data class UserPreferences(
         val hidePillIndicator: Boolean = false,
         val blurEffects: Boolean = true,
         val isSampleDataSeeded: Boolean = false,
-        val appIcon: AppIcon = AppIcon.ORIGINAL,
         // Currency Settings preferences
         val unifiedCurrencyEnabled: Boolean = false,
         val unifiedCurrencyCode: String? = null,

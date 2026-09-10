@@ -7,7 +7,6 @@ import com.alzimer.whispercoin.data.preferences.NavigationBarStyle
 import com.alzimer.whispercoin.data.preferences.AppFont
 import com.alzimer.whispercoin.data.preferences.ThemeStyle
 import com.alzimer.whispercoin.data.preferences.AccentColor
-import com.alzimer.whispercoin.data.preferences.AppIcon
 import com.alzimer.whispercoin.data.preferences.UserPreferencesRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.SharingStarted
@@ -37,7 +36,6 @@ class ThemeViewModel @Inject constructor(
                 hidePillIndicator = preferences.hidePillIndicator,
                 blurEffects = preferences.blurEffects,
                 isOnboardingFinished = preferences.hasShownScanTutorial,
-                currentAppIcon = preferences.appIcon,
                 isLoaded = true
             )
         }
@@ -106,10 +104,6 @@ class ThemeViewModel @Inject constructor(
             userPreferencesRepository.updateBlurEffects(enabled)
         }
     }
-
-    fun updateAppIcon(icon: AppIcon) = viewModelScope.launch {
-        userPreferencesRepository.updateAppIcon(icon)
-    }
 }
 
 data class ThemeUiState(
@@ -125,6 +119,5 @@ data class ThemeUiState(
     val hidePillIndicator: Boolean = false,
     val blurEffects: Boolean = true,
     val isOnboardingFinished: Boolean = false,
-    val currentAppIcon: AppIcon = AppIcon.ORIGINAL,
     val isLoaded: Boolean = false
 )
