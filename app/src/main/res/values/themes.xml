@@ -14,22 +14,22 @@
     </style>
 
     <style name="Theme.WhisperCoin.SplashScreen.Original" parent="Theme.WhisperCoin.SplashScreen">
-        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_logo_original_fg</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
     </style>
 
     <style name="Theme.WhisperCoin.SplashScreen.Anarchy" parent="Theme.WhisperCoin.SplashScreen">
-        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_logo_anarchy_fg</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
     </style>
 
     <style name="Theme.WhisperCoin.SplashScreen.Zenith" parent="Theme.WhisperCoin.SplashScreen">
-        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_logo_zenith_fg</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
     </style>
 
     <style name="Theme.WhisperCoin.SplashScreen.Monochrome" parent="Theme.WhisperCoin.SplashScreen">
-        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_logo_monochrome_fg</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
     </style>
 
     <style name="Theme.WhisperCoin.SplashScreen.Comic" parent="Theme.WhisperCoin.SplashScreen">
-        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_logo_comic_fg</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
     </style>
 </resources>
